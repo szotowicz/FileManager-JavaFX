@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+
+<VBox alignment="center" prefHeight="400.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="filemanager.ManagerController">
+   <children>
+      <ToolBar>
+         <items>
+            <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the name of the file / directory" wrappingWidth="219.6708984375">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+         </items>
+      </ToolBar>
+       
+       <TextField fx:id="fileNameField" prefHeight="31.0" prefWidth="365.0" />
+      
+       <TreeView fx:id="treeView" prefHeight="400.0" prefWidth="500.0" />
+       <FlowPane hgap="20">
+           <padding>
+            <Insets bottom="0" left="0" right="0" top="5" />
+         </padding>
+          <children>
+              <Button fx:id="chooseBtn" onAction="#changeRootButtonAction" >Choose...</Button>
+              <Button fx:id="deleteBtn" onAction="#deleteFileButtonAction" >Delete</Button>
+              <Button fx:id="createBtn" onAction="#createFileButtonAction">Add file</Button>
+              <Button fx:id="createDBtn" onAction="#createDirButtonAction">Add directory</Button>
+          </children>
+       </FlowPane>
+   </children>
+</VBox>
