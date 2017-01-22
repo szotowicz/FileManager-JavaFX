@@ -1,7 +1,7 @@
 # FileManager-JavaFX
 The project made with JavaFX. The application acting functions file manager.
 
-See screenshot (screenshot.jpg). The project with the source code is located in the .zip file.
+See screenshot (screenshot.jpg).
 
 
 > It allows you to: 
